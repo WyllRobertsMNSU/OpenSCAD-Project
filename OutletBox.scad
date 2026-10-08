@@ -1,10 +1,17 @@
+
+
+//Number of columns of outlets, mm
+columnsOfOutlets = 1; // [1:100]
+
+//Number of rows of outlets, mm
+rowsOfOutlets = 1; //[1:100]
+
+//Clearance of the clips to the box, mm
+clearance = 1; //[1:3]
+
+/*[Hidden]*/
 $fn = 360;
-
 plugDimensions = [38, 38, 1.5];
-columnsOfOutlets = 1;
-rowsOfOutlets = 1;
-clearance = 1;
-
 module HingeClip() {
     difference() {
         difference() {
@@ -12,7 +19,7 @@ module HingeClip() {
             cylinder(h = 11, r = 1.5 + clearance, center = true);
         }
         translate([0, 2, 0])
-            cube([4, 4, 11], center = true);
+            cube([3 + clearance, 4 + clearance, 11], center = true);
     }
 }
 
