@@ -1,0 +1,10 @@
+{
+    "fileFormatVersion": "1",
+    "parameterSets": {
+        "New set 1": {
+            "outletHeight": "40",
+            "outletThickness": "3",
+            "outletWidth": "40"
+        }
+    }
+}
